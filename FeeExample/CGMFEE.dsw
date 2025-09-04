@@ -1,0 +1,39 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "CGMFEE"=.\CGMFEE.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Develop/Laben/NSGU/CGMFEE", PWQBAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Develop/Laben/NSGU/CGMFEE", PWQBAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+    {5659F5B6-7AF7-4B8C-B939-8EA4371EDCC9}
+    {48F1C99D-EE6E-45D2-A271-4BA3E1E25085}
+}}}
+
+###############################################################################
+

@@ -1,0 +1,280 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CGMFEE.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CGMFEE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CGMFEE Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CGMFEE_DIALOG DIALOGEX 0, 0, 544, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CGMFEE Simulator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_EDEN_TM,"{5659F5B6-7AF7-4B8C-B939-8EA4371EDCC9}",
+                    WS_TABSTOP,12,24,12,12
+    CONTROL         "",IDC_EDEN_CMD,"{5659F5B6-7AF7-4B8C-B939-8EA4371EDCC9}",
+                    WS_TABSTOP,12,48,12,12
+    GROUPBOX        "Eden MTP Links",IDC_STATIC,6,6,90,66
+    LTEXT           "Telemetry",IDC_STATIC,30,24,36,12,SS_CENTERIMAGE
+    LTEXT           "Commands",IDC_STATIC,30,48,36,12,SS_CENTERIMAGE
+    GROUPBOX        "Mode",IDC_STATIC,102,6,66,66
+    CONTROL         "Idle",IDC_MODE_IDLE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,108,18,27,10
+    CONTROL         "Manual",IDC_MODE_MANUAL,"Button",BS_AUTORADIOBUTTON,108,
+                    36,39,10
+    CONTROL         "Automatic",IDC_MODE_AUTOMATIC,"Button",
+                    BS_AUTORADIOBUTTON,108,54,47,10
+    GROUPBOX        "Configuration",IDC_STATIC,12,96,462,48
+    CONTROL         "Main",IDC_LNA_MAIN,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,18,113,31,10
+    CONTROL         "Redundant",IDC_LNA_REDUNDANT,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,18,126,51,10
+    LTEXT           "Coarse Attenuation:",IDC_STATIC,144,108,63,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_COARSE_ATTENUATION,216,108,54,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Fine Attenuation:",IDC_STATIC,144,126,63,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_FINE_ATTENUATION,216,126,54,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Coarse Phase:",IDC_STATIC,342,108,63,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_COARSE_PHASE,414,108,54,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Fine Phase:",IDC_STATIC,342,126,63,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FINE_PHASE,414,126,54,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Tab2",IDC_CGMFEE,"SysTabControl32",0x0,6,78,474,72
+    PUSHBUTTON      "Close",IDC_QUIT,486,6,50,14
+    CONTROL         "List1",IDC_COMMAND_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,180,18,294,48
+    GROUPBOX        "MTP Commands",IDC_STATIC,174,6,306,66
+    GROUPBOX        "Memory Load",IDC_STATIC,6,156,234,84
+    GROUPBOX        "Serial Digital",IDC_STATIC,246,156,234,84
+    CONTROL         "List1",IDC_MEMORY_LOAD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,12,168,222,66
+    CONTROL         "List1",IDC_SERIAL_DIGITAL_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,252,168,222,66
+    PUSHBUTTON      "&Help",ID_HELP,486,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CGMFEE MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CGMFEE\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CGMFEE.EXE\0"
+            VALUE "ProductName", "CGMFEE Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CGMFEE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 537
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CGMFEE_DIALOG DLGINIT
+BEGIN
+    IDC_EDEN_TM, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x0211, 0x0000, 0x0000, 
+0x0000, 
+    IDC_EDEN_CMD, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x0211, 0x0000, 0x0000, 
+0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About CGMFEE..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CGMFEE.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CGMFEE.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
